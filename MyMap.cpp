@@ -48,7 +48,7 @@ pair<string,int> MyMap::operator [](int idx) {
     for (it2 = myMap.begin(); it2 != myMap.end(); it2++) {
 
         if (count == idx)
-            return it2);
+            return (*it2);
         count++;
     }
     return (*it2);
