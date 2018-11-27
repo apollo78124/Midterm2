@@ -24,8 +24,7 @@ public:
     void add(string key, int score);
     pair <string,int> operator [](int idx);
     pair<string,int> operator [](int idx) const;
-    pair<string,int>& operator [](string idx);
-    pair<string,int> operator [](string idx) const;
+    pair<string,int> operator [](string idx);
     friend ostream& operator<<(ostream& os, MyMap& mm);
 };
 #endif //MIDTERM2_MYMAP_HPP

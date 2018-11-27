@@ -59,11 +59,11 @@ pair<string,int> MyMap::operator [](int idx) {
 pair<string,int>& MyMap::operator [](string idx) {
     return myMap[idx];
 }
-
-pair<string,int> MyMap::operator [](string idx) const{
-    return myMap.find(idx);
-}
 */
+pair<string,int> MyMap::operator [](string idx) {
+    return (*myMap.find(idx));
+}
+
 ostream& operator<<(ostream& os, MyMap& mm)
 {
    map<string, int>::iterator it2;
